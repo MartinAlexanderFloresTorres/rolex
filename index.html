@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#000000"/>
+    <meta name="description" 
+          content="Rolex, venta de relojes, creado para desmotración de aprendizaje.">
+    <meta name="keywords" content="javascript, js, rolex, css, html, venta, relojes, moda, estilo">
+    <meta name="author" content="Flores Torres Martin Alexander">
+
+    <!-- css -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- box icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    
+    <link rel="preload" href="main.js" as="script">
+
+    <link rel="preload" href="img/home.png" as="image">
+
+    <link rel="apple-touch-icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <link rel="preload" href="img/loader.gif" as="image">
+
+    <title>Rolex</title>
+</head>
+<body>
+    <!--===== loader =====-->
+    <div class="loader">
+        <img class="loader__gif" src="img/loader.gif" alt="loader">
+    </div>
+
+    <!--===== header =====-->
+    <header class="header">
+        <div class="header__contenedor max-width">
+            <div class="navegacion">
+                <a href="#inicio" class="navegacion__logo"><i class='bx bxs-watch navegacion__ico'></i> Rolex</a>
+                <ul class="navegacion__lista">
+                    <i class='bx bx-x navegacion__close'></i>
+                    <li class="navegacion__item"><a class="navegacion__link active" href="#inicio">Inicio</a></li>
+                    <li class="navegacion__item"><a class="navegacion__link" href="#destacados">Descatados</a></li>
+                    <li class="navegacion__item"><a class="navegacion__link" href="#productos">Productos</a></li>
+                    <li class="navegacion__item"><a class="navegacion__link" href="#nuevo">Nuevo</a></li>
+                </ul>
+            </div>
+            <div class="iconos">
+                <div class="iconos__contenedor">
+                    <div class="iconos__modo iconos__ico">
+                        <i class='bx bx-moon iconos__oscuro'></i>
+                        <i class='bx bx-sun  iconos__claro'></i>
+                    </div>
+                    <i class='bx bx-cart iconos__ico iconos__carrito'><span class="header__indice"></span></i>
+                    <i class='bx bx-menu iconos__ico iconos__menu' ></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--===== carrito =====-->
+    <section class="carrito">
+        <div class="carrito__top">
+            <p class="carrito__vaciar">vaciar</p>
+            <h2 class="carrito__title">Mi Carrito</h2>
+            <i class='bx bx-x carrito__close'></i>
+        </div>
+        <div class="carrito__cards">
+            <!--  -->
+        </div>
+        <div class="carrito__bottom">
+            <p class="carrito__cantidad"><span class="cantidad__producto">0</span> Productos</p>
+            <p class="carrito__total">Total: <span class="carrito__color">S/.<span class="cantidad__total">0.00</span></span></p>
+        </div>
+    </section>
+
+    <!--===== producto exitosamente notificacion =====-->
+    <div class="agregadoExitosamente">PRODUCTO AGREGADO</div>
+
+    <main class="contenedor max-width">
+        <!--===== inicio =====-->
+        <section class="inicio" id="inicio">
+            <div class="inicio__presentacion">
+                <h1 class="inicio__title">NUEVAS COLECCIONES DE RELOJES B720</h1>
+                <p class="inicio__parrafo">
+                    Última llegada de los nuevos relojes importados 
+                    de la serie B720, con un diseño moderno y resistente.
+                </p>
+                <span class="inicio__precio">S/.1245</span>
+                <a class="inicio__linkDescubrir" href="#">Descubrir</a>
+                <button class="inicio__boton agregar">Añadir Al carrito</button>
+                <div class="inicio__redes">
+                    <a class="inicio__link" href="#">Facebook</a>
+                    <a class="inicio__link" href="#">Instagram</a>
+                    <a class="inicio__link" href="#">GitHub</a>
+                </div>
+            </div>
+            <div class="inicio__imagen">
+                <img class="inicio__img" src="img/home.png" alt="home">
+            </div>
+        </section>
+
+        <!--===== destacados =====-->
+        <section class="destacados" id="destacados">
+            <h1 class="titulo">Destacados</h1>
+            <div class="destacados__contenedor">
+                <div class="destacados__columna">
+                    <p class="destacados__rebaja">Rebaja</p>
+                    <img class="destacados__img" src="img/featured1.png" alt="producto">
+                    <h3 class="destacados__title">MAESTRO DE JAZZ</h3>
+                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
+                    <div class="destacados__boton"><button class="inicio__boton inicio__boton--ocultar agregar">Añadir Al carrito</button></div>
+                </div>
+                <div class="destacados__columna">
+                    <p class="destacados__rebaja">Rebaja</p>
+                    <img class="destacados__img" src="img/featured2.png" alt="producto">
+                    <h3 class="destacados__title">INGERSOLL</h3>
+                    <span class="inicio__precio inicio__precio--tamaño">S/.645</span>
+                    <div class="destacados__boton"><button class="inicio__boton inicio__boton--ocultar agregar">Añadir Al carrito</button></div>
+                </div>
+                <div class="destacados__columna">
+                    <p class="destacados__rebaja">Rebaja</p>
+                    <img class="destacados__img" src="img/featured3.png" alt="producto">
+                    <h3 class="destacados__title">ORO ROSA</h3>
+                    <span class="inicio__precio inicio__precio--tamaño">S/.545</span>
+                    <div class="destacados__boton"><button class="inicio__boton inicio__boton--ocultar agregar">Añadir Al carrito</button></div>
+                </div>
+            </div>
+            <div class="historia">
+                <div class="historia__imagen">
+                    <img class="historia__img" src="img/story.png" alt="image">
+                </div>
+                <div class="historia__info">
+                    <h1 class="titulo titulo--margin">Nuestra historia</h1>
+                    <h2 class="inicio__title">Reloj inspirador de este año</h2>
+                    <p class="inicio__parrafo">
+                        Los últimos y modernos relojes de este año, están disponibles 
+                        en varias presentaciones en esta tienda, descúbrelos ahora.
+                    </p>
+                    <button class="inicio__boton inicio__boton--margin">Descubrir</button>
+                </div>
+            </div>
+        </section>
+
+        <!--===== productos =====-->
+        <section class="productos" id="productos">
+            <h1 class="titulo">Productos</h1>
+            <div class="productos__contenedor">
+                <div class="productos__columna">
+                    <img class="productos__img" src="img/product1.png" alt="imagen">
+                    <h3 class="destacados__title">ESPÍRITU ROSA</h3>
+                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
+                    <i class="bx bx-shopping-bag productos__ico agregar"></i>
+                </div>
+                <div class="productos__columna">
+                    <img class="productos__img" src="img/product2.png" alt="imagen">
+                    <h3 class="destacados__title">PILOTO CAQUI</h3>
+                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
+                    <i class="bx bx-shopping-bag productos__ico agregar"></i>
+                </div>
+                <div class="productos__columna">
+                    <img class="productos__img" src="img/product3.png" alt="imagen">
+                    <h3 class="destacados__title">JUBILEO NEGRO</h3>
+                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
+                    <i class="bx bx-shopping-bag productos__ico agregar"></i>
+                </div>
+                <div class="productos__columna">
+                    <img class="productos__img" src="img/product4.png" alt="imagen">
+                    <h3 class="destacados__title">FÓSIL ME3</h3>
+                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
+                    <i class="bx bx-shopping-bag productos__ico agregar"></i>
+                </div>
+                <div class="productos__columna">
+                    <img class="productos__img" src="img/product5.png" alt="imagen">
+                    <h3 class="destacados__title">DUCHEN</h3>
+                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
+                    <i class="bx bx-shopping-bag productos__ico agregar"></i>
+                </div>
+                <div class="productos__columna">
+                    <img class="productos__img" src="img/featured1.png" alt="imagen">
+                    <h3 class="destacados__title">MAESTRO DE JAZZ</h3>
+                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
+                    <i class="bx bx-shopping-bag productos__ico agregar"></i>
+                </div>
+            </div>
+        </section>
+
+        <!--===== nuevo =====-->
+        <section class="nuevo" id="nuevo">
+            <h1 class="titulo">Los recien llegados</h1>
+            <div class="productos__contenedor">
+                <div class="productos__columna productos__columna--nuevo">
+                    <img class="productos__img" src="img/new1.png" alt="imagen">
+                    <h3 class="destacados__title">ESPÍRITU ROSA</h3>
+                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
+                    <p class="nuevo__new">nuevo</p>
+                    <div class="nuevo__agregar">
+                        <button class="inicio__boton inicio__boton--color agregar">agregar</button>
+                    </div>
+                </div>
+                <div class="productos__columna productos__columna--nuevo">
+                    <img class="productos__img" src="img/new2.png" alt="imagen">
+                    <h3 class="destacados__title">PILOTO CAQUI</h3>
+                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
+                    <p class="nuevo__new">nuevo</p>
+                    <div class="nuevo__agregar">
+                        <button class="inicio__boton inicio__boton--color agregar">agregar</button>
+                    </div>
+                </div>
+                <div class="productos__columna productos__columna--nuevo">
+                    <img class="productos__img" src="img/new3.png" alt="imagen">
+                    <h3 class="destacados__title">JUBILEO NEGRO</h3>
+                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
+                    <p class="nuevo__new">nuevo</p>
+                    <div class="nuevo__agregar">
+                        <button class="inicio__boton inicio__boton--color agregar">agregar</button>
+                    </div>
+                </div>
+                <div class="productos__columna productos__columna--nuevo">
+                    <img class="productos__img" src="img/new4.png" alt="imagen">
+                    <h3 class="destacados__title">FÓSIL ME3</h3>
+                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
+                    <p class="nuevo__new">nuevo</p>
+                    <div class="nuevo__agregar">
+                        <button class="inicio__boton inicio__boton--color agregar">agregar</button>
+                    </div>
+                </div>
+                <div class="productos__columna productos__columna--nuevo">
+                    <img class="productos__img" src="img/new1.png" alt="imagen">
+                    <h3 class="destacados__title">DUCHEN</h3>
+                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
+                    <p class="nuevo__new">nuevo</p>
+                    <div class="nuevo__agregar">
+                        <button class="inicio__boton inicio__boton--color agregar">agregar</button>
+                    </div>
+                </div>
+                <div class="productos__columna productos__columna--nuevo">
+                    <img class="productos__img" src="img/new3.png" alt="imagen">
+                    <h3 class="destacados__title">MAESTRO DE JAZZ</h3>
+                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
+                    <p class="nuevo__new">nuevo</p>
+                    <div class="nuevo__agregar">
+                        <button class="inicio__boton inicio__boton--color agregar">agregar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== contacto =====-->
+        <section class="contacto">
+            <div class="contacto__informacion">
+                <h1 class="contacto__title">Suscríbete a nuestro boletín</h1>
+                <p>
+                    No te pierdas sus descuentos. Suscríbase a nuestro 
+                    boletín de correo electrónico para obtener las mejores ofertas, 
+                    descuentos, cupones, regalos y mucho más.
+                </p>
+            </div>
+            <div class="contacto__formulario">
+                <form class="contacto__form">
+                    <input class="contacto__input" type="email" placeholder="Introduce tu correo electronico" required>
+                    <button class="inicio__boton inicio__boton--tamaño">Suscribir</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== SCROLL UP =====-->
+    <a href="#inicio" class="scrollup" id="scroll-up"> 
+        <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+    </a>
+
+    <!--===== footer =====-->
+    <footer class="footer max-width">
+        <div class="footer__contenedor">
+            <ul class="footer__columna">
+                <h2 class="footer__title">nuestra información</h2>
+                <li class="footer__item">1234 - Perú</li>
+                <li class="footer__item">La Libertad 43210</li>
+                <li class="footer__item"><a class="footer__link" href="tel:123-456-789">123-456-789</a></li>
+            </ul>
+            <ul class="footer__columna">
+                <h2 class="footer__title">Sobre nosotros</h2>
+                <li class="footer__item"><a class="footer__link" href="#">Centro de Apoyo</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Atención al cliente</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Sobre nosotros</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Copiar a la derecha</a></li>
+            </ul>
+            <ul class="footer__columna">
+                <h2 class="footer__title">Productos</h2>
+                <li class="footer__item"><a class="footer__link" href="#">bicicletas de carretera</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">bicicletas de montaña</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Eléctrico</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Accesorios</a></li>
+            </ul>
+            <ul class="footer__columna">
+                <h2 class="footer__title">Redes Sociales</h2>
+                <div>
+                    <a class="footer__ico"  href="#"><i class="bx bxl-facebook"></i></a>
+                    <a class="footer__ico"  href="#"><i class="bx bxl-github"></i></a>
+                    <a class="footer__ico"  href="#"><i class="bx bxl-instagram"></i></a>
+                </div>
+            </ul>
+        </div>
+        <p class="footer__copy">© WhiteCode. Todos los derechos reservados</p>
+    </footer>
+    
+    <!--===== js =====-->
+    <script src="main.js"></script>
+</body>
+</html>
