@@ -1,18 +1,25 @@
+"use strict";
 /*===== loader ===== */
-const loader = document.querySelector('.loader');
-window.addEventListener('load', () =>loader.style.display = "none");
+const loader = document.querySelector(".loader");
+window.addEventListener("load", () => (loader.style.display = "none"));
 
 /*===== TOGGLE CARRITO ===== */
 const iconoCarrito = document.querySelector(".iconos__carrito");
 const carrito = document.querySelector(".carrito");
 const iconoClose = document.querySelector(".carrito__close");
+const agregadoExitosamente = document.querySelector(".agregadoExitosamente");
+const bodyEvento = document.querySelector("body");
 
 const toggleCard = () => {
     iconoCarrito.addEventListener("click", () => {
         carrito.classList.toggle("active");
+        agregadoExitosamente.classList.add("left");
+        bodyEvento.classList.add('active')
     });
     iconoClose.addEventListener("click", () => {
         carrito.classList.remove("active");
+        agregadoExitosamente.classList.remove("left");
+        bodyEvento.classList.remove('active')
     });
 };
 toggleCard();
@@ -25,13 +32,16 @@ const navegacionLinks = document.querySelectorAll(".navegacion__link");
 const toggleNavegacion = () => {
     iconoMenu.addEventListener("click", () => {
         navegacion.classList.toggle("active");
+        bodyEvento.classList.add('active')
     });
     iconoCloseMenu.addEventListener("click", () => {
         navegacion.classList.remove("active");
+        bodyEvento.classList.remove('active')
     });
     navegacionLinks.forEach((item) => {
         item.addEventListener("click", () => {
             navegacion.classList.remove("active");
+            bodyEvento.classList.remove('active')
         });
     });
 };
@@ -112,69 +122,3 @@ function scrollUp() {
     }
 }
 window.addEventListener("scroll", scrollUp);
-
-/*===== agregar carrito ===== */
-const agregar = document.querySelectorAll(".agregar");
-const carritoCantidad = document.querySelector(".header__indice");
-const carritoCards = document.querySelector(".carrito__cards");
-const btnEliminar = document.querySelector(".producto__eliminar");
-
-let cantidad = 1;
-let producto;
-
-const carritoProducto = () => {
-    producto = `
-    <div class="producto">
-    <div class="producto__imagen"><img class="producto__img" src="img/featured1.png" alt="imagen de reloj"></div>
-    <div class="producto__info">
-        <h2 class="producto__title">Reloj - ${cantidad}</h2>
-        <p class="producto__costo">S/.<span class="costo">${55 * cantidad}</span></p>
-        <p class="producto__costoReal">S/.${cantidad * 110}</p>
-        <div class="producto__iconos">
-            <div class="producto__cantidad">
-                <i class="bx bx-minus producto__menos"></i>
-                <p class="producto__numero">1</p>
-                <i class="bx bx-plus producto__mas"></i>
-            </div>
-            <i class="bx bx-trash-alt producto__eliminar"></i>
-        </div>
-    </div>
-    </div>
-    `;
-};
-
-let costoProducto;
-let total;
-
-const agregadoExitosamente = document.querySelector('.agregadoExitosamente');
-const cantidadDeCarrito = () => {
-    carritoProducto();
-    agregar.forEach((boton) => {
-        boton.addEventListener("click", () => {
-            carritoCantidad.innerHTML = cantidad;
-            cantidad++;
-            agregadoExitosamente.classList.add('active');
-            setTimeout(() => {
-                agregadoExitosamente.classList.remove('active');
-            }, 1300);
-            document.querySelector(".carrito__cards").innerHTML += producto;
-
-            const costo = document.querySelectorAll(".costo")
-            costo.forEach((element, i) => {
-                costoProducto = Number(element.textContent);
-                total = costoProducto * (i + 1);
-                document.querySelector('.cantidad__total').innerHTML = total;
-                document.querySelector('.cantidad__producto').innerHTML = cantidad - 1;
-            });
-            document.querySelector(".carrito__vaciar").addEventListener('click', () =>{
-                document.querySelector(".carrito__cards").innerHTML = "";
-                carritoCantidad.innerHTML = "";
-                cantidad = 1;
-                document.querySelector('.cantidad__total').innerHTML = "0.00";
-                document.querySelector('.cantidad__producto').innerHTML = "0";
-            });
-            carritoProducto();
-        });
-    });
-};
-cantidadDeCarrito();

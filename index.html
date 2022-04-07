@@ -73,7 +73,7 @@
         </div>
         <div class="carrito__bottom">
             <p class="carrito__cantidad"><span class="cantidad__producto">0</span> Productos</p>
-            <p class="carrito__total">Total: <span class="carrito__color">S/.<span class="cantidad__total">0.00</span></span></p>
+            <p class="carrito__total">Total: <span class="carrito__color">S/.<span class="cantidad__total">0.00</span></span> <button class="botonPagar">Pagar</button> </p>
         </div>
     </section>
 
@@ -84,14 +84,15 @@
         <!--===== inicio =====-->
         <section class="inicio" id="inicio">
             <div class="inicio__presentacion">
-                <h1 class="inicio__title">NUEVAS COLECCIONES DE RELOJES B720</h1>
+                <img class="displayImagen" src="img/home.png" alt="imagen">
+                <h1 class="inicio__title destacados__title">NUEVAS COLECCIONES DE RELOJES B720</h1>
                 <p class="inicio__parrafo">
                     Última llegada de los nuevos relojes importados 
                     de la serie B720, con un diseño moderno y resistente.
                 </p>
-                <span class="inicio__precio">S/.1245</span>
+                <p class="precio__naranja">S/.<span class="inicio__precio">1245</span></p>
                 <a class="inicio__linkDescubrir" href="#">Descubrir</a>
-                <button class="inicio__boton agregar">Añadir Al carrito</button>
+                <button class="inicio__boton agregar" data-id="16">Añadir Al carrito</button>
                 <div class="inicio__redes">
                     <a class="inicio__link" href="#">Facebook</a>
                     <a class="inicio__link" href="#">Instagram</a>
@@ -111,22 +112,22 @@
                     <p class="destacados__rebaja">Rebaja</p>
                     <img class="destacados__img" src="img/featured1.png" alt="producto">
                     <h3 class="destacados__title">MAESTRO DE JAZZ</h3>
-                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
-                    <div class="destacados__boton"><button class="inicio__boton inicio__boton--ocultar agregar">Añadir Al carrito</button></div>
+                    <p class="precio__naranja inicio__precio--tamaño">S/.<span class="inicio__precio">245</span></p>
+                    <button class="inicio__boton inicio__boton--ocultar agregar" data-id="1">Añadir Al carrito</button>
                 </div>
                 <div class="destacados__columna">
                     <p class="destacados__rebaja">Rebaja</p>
                     <img class="destacados__img" src="img/featured2.png" alt="producto">
                     <h3 class="destacados__title">INGERSOLL</h3>
-                    <span class="inicio__precio inicio__precio--tamaño">S/.645</span>
-                    <div class="destacados__boton"><button class="inicio__boton inicio__boton--ocultar agregar">Añadir Al carrito</button></div>
+                    <p class="precio__naranja inicio__precio--tamaño">S/.<span class="inicio__precio">205</span></p>
+                    <button class="inicio__boton inicio__boton--ocultar agregar" data-id="2">Añadir Al carrito</button>
                 </div>
                 <div class="destacados__columna">
                     <p class="destacados__rebaja">Rebaja</p>
                     <img class="destacados__img" src="img/featured3.png" alt="producto">
                     <h3 class="destacados__title">ORO ROSA</h3>
-                    <span class="inicio__precio inicio__precio--tamaño">S/.545</span>
-                    <div class="destacados__boton"><button class="inicio__boton inicio__boton--ocultar agregar">Añadir Al carrito</button></div>
+                    <p class="precio__naranja inicio__precio--tamaño">S/.<span class="inicio__precio">215</span></p>
+                    <button class="inicio__boton inicio__boton--ocultar agregar" data-id="3">Añadir Al carrito</button>
                 </div>
             </div>
             <div class="historia">
@@ -152,38 +153,38 @@
                 <div class="productos__columna">
                     <img class="productos__img" src="img/product1.png" alt="imagen">
                     <h3 class="destacados__title">ESPÍRITU ROSA</h3>
-                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
-                    <i class="bx bx-shopping-bag productos__ico agregar"></i>
+                    <p class="precio__naranja inicio__precio--tamaño">S/.<span class="inicio__precio">145</span></p>
+                    <i class="bx bx-shopping-bag productos__ico agregar" data-id="4"></i>
                 </div>
                 <div class="productos__columna">
                     <img class="productos__img" src="img/product2.png" alt="imagen">
                     <h3 class="destacados__title">PILOTO CAQUI</h3>
-                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
-                    <i class="bx bx-shopping-bag productos__ico agregar"></i>
+                    <p class="precio__naranja inicio__precio--tamaño">S/.<span class="inicio__precio">105</span></p>
+                    <i class="bx bx-shopping-bag productos__ico agregar" data-id="5"></i>
                 </div>
                 <div class="productos__columna">
                     <img class="productos__img" src="img/product3.png" alt="imagen">
                     <h3 class="destacados__title">JUBILEO NEGRO</h3>
-                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
-                    <i class="bx bx-shopping-bag productos__ico agregar"></i>
+                    <p class="precio__naranja inicio__precio--tamaño">S/.<span class="inicio__precio">99</span></p>
+                    <i class="bx bx-shopping-bag productos__ico agregar" data-id="6"></i>
                 </div>
                 <div class="productos__columna">
                     <img class="productos__img" src="img/product4.png" alt="imagen">
                     <h3 class="destacados__title">FÓSIL ME3</h3>
-                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
-                    <i class="bx bx-shopping-bag productos__ico agregar"></i>
+                    <p class="precio__naranja inicio__precio--tamaño">S/.<span class="inicio__precio">111</span></p>
+                    <i class="bx bx-shopping-bag productos__ico agregar" data-id="7"></i>
                 </div>
                 <div class="productos__columna">
                     <img class="productos__img" src="img/product5.png" alt="imagen">
                     <h3 class="destacados__title">DUCHEN</h3>
-                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
-                    <i class="bx bx-shopping-bag productos__ico agregar"></i>
+                    <p class="precio__naranja inicio__precio--tamaño">S/.<span class="inicio__precio">122</span></p>
+                    <i class="bx bx-shopping-bag productos__ico agregar" data-id="8"></i>
                 </div>
                 <div class="productos__columna">
                     <img class="productos__img" src="img/featured1.png" alt="imagen">
                     <h3 class="destacados__title">MAESTRO DE JAZZ</h3>
-                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
-                    <i class="bx bx-shopping-bag productos__ico agregar"></i>
+                    <p class="precio__naranja inicio__precio--tamaño">S/.<span class="inicio__precio">125</span></p>
+                    <i class="bx bx-shopping-bag productos__ico agregar" data-id="9"></i>
                 </div>
             </div>
         </section>
@@ -195,56 +196,50 @@
                 <div class="productos__columna productos__columna--nuevo">
                     <img class="productos__img" src="img/new1.png" alt="imagen">
                     <h3 class="destacados__title">ESPÍRITU ROSA</h3>
-                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
+                    <p class="precio__naranja inicio__precio--tamaño">S/.<span class="inicio__precio">335</span></p>
                     <p class="nuevo__new">nuevo</p>
-                    <div class="nuevo__agregar">
-                        <button class="inicio__boton inicio__boton--color agregar">agregar</button>
-                    </div>
+                    <button class="inicio__boton  inicio__boton--color agregar" data-id="10">agregar</button>
+                    
                 </div>
                 <div class="productos__columna productos__columna--nuevo">
                     <img class="productos__img" src="img/new2.png" alt="imagen">
                     <h3 class="destacados__title">PILOTO CAQUI</h3>
-                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
+                    <p class="precio__naranja inicio__precio--tamaño">S/.<span class="inicio__precio">215</span></p>
                     <p class="nuevo__new">nuevo</p>
-                    <div class="nuevo__agregar">
-                        <button class="inicio__boton inicio__boton--color agregar">agregar</button>
-                    </div>
+                    <button class="inicio__boton inicio__boton--color agregar" data-id="11">agregar</button>
+                    
                 </div>
                 <div class="productos__columna productos__columna--nuevo">
                     <img class="productos__img" src="img/new3.png" alt="imagen">
                     <h3 class="destacados__title">JUBILEO NEGRO</h3>
-                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
+                    <p class="precio__naranja inicio__precio--tamaño">S/.<span class="inicio__precio">325</span></p>
                     <p class="nuevo__new">nuevo</p>
-                    <div class="nuevo__agregar">
-                        <button class="inicio__boton inicio__boton--color agregar">agregar</button>
-                    </div>
+                    <button class="inicio__boton inicio__boton--color agregar" data-id="12">agregar</button>
+                    
                 </div>
                 <div class="productos__columna productos__columna--nuevo">
                     <img class="productos__img" src="img/new4.png" alt="imagen">
                     <h3 class="destacados__title">FÓSIL ME3</h3>
-                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
+                    <p class="precio__naranja inicio__precio--tamaño">S/.<span class="inicio__precio">415</span></p>
                     <p class="nuevo__new">nuevo</p>
-                    <div class="nuevo__agregar">
-                        <button class="inicio__boton inicio__boton--color agregar">agregar</button>
-                    </div>
+                    <button class="inicio__boton inicio__boton--color agregar" data-id="13">agregar</button>
+                    
                 </div>
                 <div class="productos__columna productos__columna--nuevo">
                     <img class="productos__img" src="img/new1.png" alt="imagen">
                     <h3 class="destacados__title">DUCHEN</h3>
-                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
+                    <p class="precio__naranja inicio__precio--tamaño">S/.<span class="inicio__precio">422</span></p>
                     <p class="nuevo__new">nuevo</p>
-                    <div class="nuevo__agregar">
-                        <button class="inicio__boton inicio__boton--color agregar">agregar</button>
-                    </div>
+                    <button class="inicio__boton inicio__boton--color agregar" data-id="14">agregar</button>
+                    
                 </div>
                 <div class="productos__columna productos__columna--nuevo">
                     <img class="productos__img" src="img/new3.png" alt="imagen">
                     <h3 class="destacados__title">MAESTRO DE JAZZ</h3>
-                    <span class="inicio__precio inicio__precio--tamaño">S/.345</span>
+                    <p class="precio__naranja inicio__precio--tamaño">S/.<span class="inicio__precio">122</span></p>
                     <p class="nuevo__new">nuevo</p>
-                    <div class="nuevo__agregar">
-                        <button class="inicio__boton inicio__boton--color agregar">agregar</button>
-                    </div>
+                    <button class="inicio__boton inicio__boton--color agregar" data-id="15">agregar</button>
+                    
                 </div>
             </div>
         </section>
@@ -310,5 +305,6 @@
     
     <!--===== js =====-->
     <script src="main.js"></script>
+    <script src="carrito.js"></script>
 </body>
 </html>
